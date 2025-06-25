@@ -1,0 +1,65 @@
+# =================
+# Quantum ESPRESSO
+# =================
+# Directory di output temporanea
+outdir/
+tmp/
+*.save/
+
+# File di output e temporanei comuni
+*.out
+*.log
+*.err
+*.xml
+*.EXIT
+*.path
+*.hub.*
+*.wfc*
+*.rho
+*.rho.xml
+*.pot
+*.at
+*.upf # Non caricare i pseudopotenziali se non è strettamente necessario
+# Mantieni solo i file di input .in e gli script di analisi/post-processing
+
+# =================
+# MATLAB
+# =================
+*.asv
+*.bak
+*.mex*
+*.p
+*.log
+pathdef.m
+
+# =================
+# LaTeX
+# =================
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+_build/
+
+# =================
+# Python / General
+# =================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*~
+
+# =================
+# OS Generated files
+# =================
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
