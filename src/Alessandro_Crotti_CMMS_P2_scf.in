@@ -1,0 +1,28 @@
+&CONTROL
+  calculation = 'scf'
+  prefix      = 'silicon'  ! Usiamo un prefisso più semplice
+  pseudo_dir  = '/home/alecrotti/src/qe-7.4.1/pseudo'
+  outdir      = './out'    ! Mettiamo tutto in una cartella 'out'
+/
+&SYSTEM
+  ibrav       = 2
+  celldm(1)   = 10.234422
+  nat         = 2
+  ntyp        = 1
+  ecutwfc     = 55.0
+  occupations = 'smearing'  ! Per un metallo/semiconduttore è più stabile
+  smearing    = 'gauss'
+  degauss     = 0.01
+  nbnd        = 12          ! Un numero ragionevole di bande
+/
+&ELECTRONS
+  conv_thr    = 1.0d-8
+  mixing_beta = 0.7
+/
+ATOMIC_SPECIES
+ Si 28.0855 Si.vbc.UPF
+ATOMIC_POSITIONS (crystal)
+ Si 0.00 0.00 0.00
+ Si 0.25 0.25 0.25
+K_POINTS {automatic}
+ 12 12 12 0 0 0  ! Ho tolto gli shift, non sono necessari qui

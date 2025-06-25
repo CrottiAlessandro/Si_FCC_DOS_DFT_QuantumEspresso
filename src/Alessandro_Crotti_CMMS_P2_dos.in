@@ -1,0 +1,8 @@
+&DOS
+  prefix = 'silicon_vcrelax',
+  outdir = './silicon_vcrelax.save',
+  fildos = 'si_dos.dat',
+  Emin = -10.0,
+  Emax = 10.0,
+  DeltaE = 0.01
+/
